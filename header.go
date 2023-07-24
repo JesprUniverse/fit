@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/tormoder/fit/dyncrc16"
+	"github.com/JesprUniverse/fit/dyncrc16"
 )
 
 // Header represents a FIT file header.

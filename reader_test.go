@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tormoder/fit"
+	"github.com/JesprUniverse/fit"
 )
 
 var (

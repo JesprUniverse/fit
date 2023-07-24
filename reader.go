@@ -10,8 +10,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/tormoder/fit/dyncrc16"
-	"github.com/tormoder/fit/internal/types"
+	"github.com/JesprUniverse/fit/dyncrc16"
+	"github.com/JesprUniverse/fit/internal/types"
 )
 
 var (
@@ -453,7 +453,7 @@ func (d *decoder) parseDefinitionMessage(recordHeader byte) (*defmsg, error) {
 	for i, fd := range dm.fieldDefs {
 		fd.num = d.tmp[i*3]
 		fd.size = d.tmp[(i*3)+1]
-		fd.btype = types.DecodeBase(d.tmp[(i*3)+2])
+		fd.btype = types.Base(d.tmp[(i*3)+2])
 		if err = d.validateFieldDef(dm.globalMsgNum, fd); err != nil {
 			if d.debug {
 				d.opts.logger.Println("illegal definition message:", dm)
@@ -480,6 +480,7 @@ func (d *decoder) parseDefinitionMessage(recordHeader byte) (*defmsg, error) {
 			ddfd.devDataIndex = d.tmp[(i*3)+2]
 			dm.devDataFieldDescs[i] = ddfd
 		}
+
 	}
 
 	if d.debug {
@@ -530,6 +531,7 @@ func (d *decoder) validateFieldDef(gmsgnum MesgNum, dfield fieldDef) error {
 		// not greater than the profile base type size. A smaller size
 		// is allowed due to dynamic fields.
 		switch {
+
 		case int(dfield.size) > pfield.t.BaseType().Size():
 			return fmt.Errorf(
 				"field %d: size %d for %v as base type in definition message is greater than size %d for %v as base type from profile",
@@ -904,7 +906,7 @@ func (d *decoder) parseTimeStamp(dm *defmsg, fieldv reflect.Value, pfield *field
 }
 
 func noEOF(err error) error {
-	if errors.Is(err, io.EOF) {
+	if err == io.EOF {
 		return io.ErrUnexpectedEOF
 	}
 	return err

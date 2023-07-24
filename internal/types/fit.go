@@ -54,14 +54,14 @@ func MakeNative(b Base, array bool) Fit {
 	return f
 }
 
-// Bit-packing layout:
+// type Fit uint16 - bit-packing layout:
 //
-//	+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
-//	| bF | bE | bD | bC | bB | bA | b9 | b8 | b7 | b6 | b5 | b4 | b3 | b2 | b1 | b0 |
-//	+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
-//	\_________________________________/\______________/\__/\________________________/
+// +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+// | bF | bE | bD | bC | bB | bA | b9 | b8 | b7 | b6 | b5 | b4 | b3 | b2 | b1 | b0 |
+// +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
+//  \________________________________/\______________/\__/\________________________/
 //
-//	               Unused                    Kind      Array       Base type
+//                Unused                    Kind      Array       Base type
 type Fit uint16
 
 func (f Fit) setKind(k Kind) Fit {
@@ -86,7 +86,7 @@ func (f Fit) Array() bool {
 }
 
 func (f Fit) BaseType() Base {
-	return Base(f & 0x1F)
+	return decompress(byte(f))
 }
 
 func (f Fit) Valid() bool {

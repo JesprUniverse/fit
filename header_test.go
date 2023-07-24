@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/tormoder/fit/dyncrc16"
+	"github.com/JesprUniverse/fit/dyncrc16"
 )
 
 var decodeHeaderTests = []struct {

@@ -226,7 +226,7 @@ var decodeTestFiles = [...]struct {
 	{
 		"bpg",
 		"garmin.fit",
-		"https://github.com/tormoder/fit/pull/54",
+		"https://github.com/JesprUniverse/fit/pull/54",
 		false,
 		11468599866908951097,
 		true,
@@ -259,7 +259,7 @@ var decodeTestFiles = [...]struct {
 	{
 		"misc",
 		"0134902991.fit",
-		"https://github.com/tormoder/fit/pull/59",
+		"https://github.com/JesprUniverse/fit/pull/59",
 		false,
 		1269717752691992296,
 		true,
@@ -270,7 +270,7 @@ var decodeTestFiles = [...]struct {
 	{
 		"misc",
 		"mornindew-broken.fit",
-		"https://github.com/tormoder/fit/issues/41",
+		"https://github.com/JesprUniverse/fit/issues/41",
 		false,
 		864390381975294256,
 		true,

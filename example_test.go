@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tormoder/fit"
+	"github.com/JesprUniverse/fit"
 )
 
 func Example() {

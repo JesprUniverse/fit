@@ -1,10 +1,10 @@
 # fitgen
 
 `fitgen` is a program that given a FIT profile generates Go code for
-[fit](https://github.com/tormoder/fit). It takes as input the official FIT profile
+[fit](https://github.com/JesprUniverse/fit). It takes as input the official FIT profile
 specification workbook and outputs Go type, message and profile definitions.
 
-Consult the [Wiki](https://github.com/tormoder/fit/wiki/Profile-Generation)
+Consult the [Wiki](https://github.com/JesprUniverse/fit/wiki/Profile-Generation)
 for information about profile generation.
 
 ## Prerequisites
@@ -34,7 +34,7 @@ profile is a convenient way of controlling struct sizes and memory usage.
 
 The `fitgen` tool supports generating code for custom product profiles. This
 can be done by editing the SDK profile workbook and invoking
-[fitgen](https://github.com/tormoder/fit/tree/master/cmd/fitgen).  Every field
+[fitgen](https://github.com/JesprUniverse/fit/tree/master/cmd/fitgen).  Every field
 definition with **a value greater than zero** in the ```EXAMPLE``` column of
 the ```Messages``` sheet will be included in the generated code.
 

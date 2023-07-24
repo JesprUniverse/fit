@@ -1,8 +1,8 @@
 # fit
 
-[![license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/tormoder/fit/raw/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/tormoder/fit?status.svg)](https://godoc.org/github.com/tormoder/fit)
-[![Build](https://github.com/tormoder/fit/workflows/Build/badge.svg)](https://github.com/tormoder/fit/actions?query=workflow%3ABuild)
+[![license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JesprUniverse/fit/raw/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/JesprUniverse/fit?status.svg)](https://godoc.org/github.com/JesprUniverse/fit)
+[![Build](https://github.com/JesprUniverse/fit/workflows/Build/badge.svg)](https://github.com/JesprUniverse/fit/actions?query=workflow%3ABuild)
 
 <img src="https://raw.githubusercontent.com/hackraft/gophericons/master/png/2.png" width="225" align="right" hspace="25" />
 
@@ -31,9 +31,9 @@ The encoder will currently (silently) ignore anything related to Developer data 
 This also means that encoding will not fail if protocol version 2 is specified for a file header.
 
 Developer data fields support is tracked by
-[#21](https://github.com/tormoder/fit/issues/21)
+[#21](https://github.com/JesprUniverse/fit/issues/21)
 and
-[#64](https://github.com/tormoder/fit/issues/64).
+[#64](https://github.com/JesprUniverse/fit/issues/64).
 
 ### Features
 
@@ -48,24 +48,24 @@ and
 Using Go modules:
 
 ```
-$ go get github.com/tormoder/fit@v0.14.0
+$ go get github.com/JesprUniverse/fit@v0.14.0
 ```
 
 Using `$GOPATH`:
 
 ```
-$ go get github.com/tormoder/fit
+$ go get github.com/JesprUniverse/fit
 ```
 
 ### About fit
 
-- [Example Usage](https://github.com/tormoder/fit/wiki/Example-Usage)
-- [Data Types](https://github.com/tormoder/fit/wiki/Data-Types)
-- [Main API Reference](https://github.com/tormoder/fit/wiki/Main-Api-Reference)
-- [Custom Product Profiles](https://github.com/tormoder/fit/wiki/Custom-Product-Profiles)
-- [Upcoming Features](https://github.com/tormoder/fit/wiki/Upcoming-Features)
-- [Contributing](https://github.com/tormoder/fit/blob/master/CONTRIBUTING.md)
-- [License](https://github.com/tormoder/fit/wiki/License)
+- [Example Usage](https://github.com/JesprUniverse/fit/wiki/Example-Usage)
+- [Data Types](https://github.com/JesprUniverse/fit/wiki/Data-Types)
+- [Main API Reference](https://github.com/JesprUniverse/fit/wiki/Main-Api-Reference)
+- [Custom Product Profiles](https://github.com/JesprUniverse/fit/wiki/Custom-Product-Profiles)
+- [Upcoming Features](https://github.com/JesprUniverse/fit/wiki/Upcoming-Features)
+- [Contributing](https://github.com/JesprUniverse/fit/blob/master/CONTRIBUTING.md)
+- [License](https://github.com/JesprUniverse/fit/wiki/License)
 
 ### Contributors
 
